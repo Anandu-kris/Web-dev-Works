@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg,#2C363F 5%,#00A0A0 95%);
+}
+h1{
+  margin-bottom: 50px;
+  font-size: 1.8rem;
+  font-weight:500;
+  text-align: center;
+  color: #050505;
+  cursor: pointer;
+  letter-spacing: 7px;
+}
+
+
+h1 span {
+  transition: 0.5s ease-out;
+}
+h1:hover span:nth-child(1) {
+  margin-right: 5px;
+}
+h1:hover span:nth-child(1):after {
+  content: "";
+}
+h1:hover span:nth-child(2) {
+  margin-left: 30px;
+}
+h1:hover span {
+  color: #ffffff;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+}
+
+.container{
+  width: 500px;
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba(0, 160, 160, 0.5);
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 1rem;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  display: flex;
+  flex-direction: column;
+  padding: 30px 40px;
+}
+label{
+  margin-bottom: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+textarea{
+  width: 100%;
+  height: 150px;
+  background: rgba( 255, 255, 255, 0.1 );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  resize: none;
+  margin-bottom: 20px;
+}
+input{
+  width: 100%;
+  height: 40px;
+  background: rgba( 255, 255, 255, 0.1 );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 20px;
+}
+::placeholder{
+  color: #deeeff;
+  opacity: 0.5;
+}
+.buttons{
+  display: flex;
+  gap: 20px;
+  margin-bottom: 15px;
+  margin-top:10px;
+}
+button{
+  padding: 10px;
+  font-size:15px;
+  width: 50%;
+  margin-bottom:10px;
+  border: none;
+  background-color: #2C363F;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 10px;
+}
+button:hover{
+  transform: scale(0.95);
+}
+h2{
+  margin-bottom: 10px;
+  font-size: 1.7rem;
+  font-weight:500;
+}
+#result{
+  width: 100%;
+  min-height: 100px;
+  background: rgba( 255, 255, 255, 0.1 );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  resize: none;
+  margin-bottom: 10px;
+}
